@@ -1,0 +1,51 @@
+/* --- 手机端按钮和下载卡片优化 --- */
+
+/* 下载卡片基础样式 */
+.download-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+  
+  .file-title { font-weight: bold; }
+  
+  /* 按钮基础样式 */
+  .btn {
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 14px;
+  }
+  
+  /* 手机适配：屏幕小于600px时 */
+  @media (max-width: 600px) {
+    .download-card {
+      flex-direction: column; /* 上下排列 */
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .file-info {
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #eee; /* 加个虚线分割 */
+    }
+    .btn {
+      display: block;
+      width: 100%; /* 按钮撑满全屏宽度 */
+      text-align: center;
+      padding: 12px 0; /* 按钮变高，方便手指点 */
+      font-size: 16px;
+    }
+  }
+  
+  /* --- 🍎 苹果 iOS 专属优化 --- */
+  body {
+    -webkit-tap-highlight-color: transparent; /* 去掉点击时的灰色背景块 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }

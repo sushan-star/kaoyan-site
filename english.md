@@ -12,6 +12,7 @@ const englishResources = [
   { title: '唐迟', iconText: '唐', color: '#f97316', link: '#' },
   { title: '刘晓艳', iconText: '刘', color: '#f97316', link: '#' },
   { title: '石雷鹏', iconText: '石', color: '#f97316', link: '#' },
+   { title: '柴荣', iconText: '石', color: '#f97316', link: '#' },
 ]
 </script>
 
